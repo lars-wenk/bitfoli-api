@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
 
-const from = '"Bitfoli" <info@bitfoli.com>';
+const from = '"Bookworm" <info@bookworm.com>';
 
 function setup() {
   return nodemailer.createTransport({
@@ -24,6 +24,21 @@ export function sendConfirmationEmail(user) {
     ${user.generateConfirmationUrl()}
     `
   };
-  
+
   tranport.sendMail(email);
 }
+
+export function sendResetPasswordEmail(user) {
+  const tranport = setup();
+  const email = {
+    from,
+    to: user.email,
+    subject: "Reset Password",
+    text: `
+    To reset password follow this link
+    ${user.generateResetPasswordLink()}
+    `
+  };
+
+  tranport.sendMail(email);
+} 
