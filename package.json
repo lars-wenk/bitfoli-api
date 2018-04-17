@@ -1,6 +1,7 @@
 {
-  "name": "binfoli-api",
+  "name": "bitfoli-api",
   "version": "1.0.0",
+  "author": "Lars Wenk",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -13,7 +14,10 @@
     "dotenv": "^5.0.1",
     "express": "^4.16.3",
     "jsonwebtoken": "^8.2.1",
-    "mongoose": "^5.0.14"
+    "lodash": "^4.17.5",
+    "mongoose": "^5.0.14",
+    "mongoose-unique-validator": "^2.0.0",
+    "nodemailer": "^4.6.4"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
