@@ -1,6 +1,6 @@
 'use strict';
 
-// user model 
+// user model
 const BFX = require('bitfinex-api-node');
 
 const bfx = new BFX({
