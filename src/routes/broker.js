@@ -1,8 +1,8 @@
-import express from "express";
-import request from "request-promise";
-import authenticate from "../middlewares/authenticate";
-import Book from "../models/Broker";
-import parseErrors from "../utils/parseErrors";
+const express = require("express");
+const request = require("request-promise");
+const authenticate = require "../middlewares/authenticate");
+let Broker from require("../models/Broker");
+const parseErrors = require("../utils/parseErrors");
 
 const router = express.Router();
 router.use(authenticate);
@@ -17,4 +17,4 @@ router.post("/", (req, res) => {
     .catch(err => res.status(400).json({ errors: parseErrors(err.errors) }));
 });
 
-export default router;
+module.exports = router;

@@ -1,4 +1,4 @@
-import nodemailer from "nodemailer";
+const nodemailer = require("nodemailer");
 
 const from = '"Bitfoli" <info@bitfoli.com>';
 
@@ -13,7 +13,7 @@ function setup() {
   });
 }
 
-export function sendConfirmationEmail(user) {
+function sendConfirmationEmail(user) {
   const tranport = setup();
   const email = {
     from,
@@ -28,7 +28,7 @@ export function sendConfirmationEmail(user) {
   tranport.sendMail(email);
 }
 
-export function sendResetPasswordEmail(user) {
+function sendResetPasswordEmail(user) {
   const tranport = setup();
   const email = {
     from,
@@ -42,3 +42,6 @@ export function sendResetPasswordEmail(user) {
 
   tranport.sendMail(email);
 }
+
+module.exports.sendConfirmationEmail = sendConfirmationEmail;
+module.exports.sendResetPasswordEmail = sendResetPasswordEmail;

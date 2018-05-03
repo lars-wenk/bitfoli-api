@@ -1942,7 +1942,7 @@ glob-parent@^3.1.0:
     is-glob "^3.1.0"
     path-dirname "^1.0.0"
 
-glob@^7.0.3, glob@^7.0.5, glob@^7.1.2:
+glob@^7.0.3, glob@^7.0.5, glob@^7.0.6, glob@^7.1.2:
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.2.tgz#c19c9df9a028702d678612384a6552404c636d15"
   dependencies:
@@ -2452,6 +2452,17 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
+jasmine-core@~3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/jasmine-core/-/jasmine-core-3.1.0.tgz#a4785e135d5df65024dfc9224953df585bd2766c"
+
+jasmine@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/jasmine/-/jasmine-3.1.0.tgz#2bd59fd7ec6ec0e8acb64e09f45a68ed2ad1952a"
+  dependencies:
+    glob "^7.0.6"
+    jasmine-core "~3.1.0"
+
 jest-docblock@^21.0.0:
   version "21.2.0"
   resolved "https://registry.yarnpkg.com/jest-docblock/-/jest-docblock-21.2.0.tgz#51529c3b30d5fd159da60c27ceedc195faf8d414"
@@ -2560,9 +2571,9 @@ jws@^3.1.4:
     jwa "^1.1.4"
     safe-buffer "^5.0.1"
 
-kareem@2.0.6:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/kareem/-/kareem-2.0.6.tgz#011ed59fd718bb147c63141a799fc888cd5a211b"
+kareem@2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/kareem/-/kareem-2.0.7.tgz#8d260366a4df4236ceccec318fcf10c17c5beb22"
 
 kind-of@^3.0.2, kind-of@^3.0.3, kind-of@^3.2.0:
   version "3.2.2"
@@ -2796,18 +2807,18 @@ mixin-deep@^1.2.0:
   dependencies:
     minimist "0.0.8"
 
-mongodb-core@3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/mongodb-core/-/mongodb-core-3.0.4.tgz#a3fdf466e697a2f1df87e458e5e2df1c26cc654b"
+mongodb-core@3.0.7:
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/mongodb-core/-/mongodb-core-3.0.7.tgz#a9941f14883a75768d554cef5fd67756a9cc0f25"
   dependencies:
     bson "~1.0.4"
     require_optional "^1.0.1"
 
-mongodb@3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-3.0.4.tgz#ee0c0f7bc565edc5f40ee2d23170e522a8ad2286"
+mongodb@3.0.7:
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-3.0.7.tgz#cfcbaee992d78dabca67177f8f9db9cf13ac3a44"
   dependencies:
-    mongodb-core "3.0.4"
+    mongodb-core "3.0.7"
 
 mongoose-legacy-pluralize@1.0.2:
   version "1.0.2"
@@ -2820,15 +2831,15 @@ mongoose-unique-validator@^2.0.0:
     lodash.foreach "^4.1.0"
     lodash.get "^4.0.2"
 
-mongoose@^5.0.14:
-  version "5.0.14"
-  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.0.14.tgz#b2157eaa00eacded6e849b4fe36f58eeeda41119"
+mongoose@^5.0.17:
+  version "5.0.17"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-5.0.17.tgz#7c70e663b8ac567460902dca636ebb59f36a540a"
   dependencies:
     async "2.1.4"
     bson "~1.0.4"
-    kareem "2.0.6"
+    kareem "2.0.7"
     lodash.get "4.4.2"
-    mongodb "3.0.4"
+    mongodb "3.0.7"
     mongoose-legacy-pluralize "1.0.2"
     mpath "0.4.1"
     mquery "3.0.0"

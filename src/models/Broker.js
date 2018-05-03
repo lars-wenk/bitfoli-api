@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 const schema = new mongoose.Schema({
   broker: { type: String, required: true },
@@ -8,4 +8,4 @@ const schema = new mongoose.Schema({
   userId: { type: mongoose.Schema.Types.ObjectId, required: true }
 });
 
-export default mongoose.model("Broker", schema);
+module.exports = mongoose.model("Broker", schema);
